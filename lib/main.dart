@@ -6,7 +6,7 @@ import 'package:coffee_app/firebase_options.dart';
 import 'package:coffee_app/simple_block_observer.dart';
 import 'package:coffee_app/veiws/bottom_navigation_bar_widget.dart';
 import 'package:coffee_app/veiws/login_veiw.dart';
-import 'package:coffee_app/veiws/onboarding_veiw.dart';
+import 'package:coffee_app/veiws/splash_veiw.dart';
 import 'package:coffee_app/veiws/registration_veiw.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
@@ -37,7 +37,7 @@ class CoffeeApp extends StatelessWidget {
       ],
       child: MaterialApp(
         routes: {
-          OnboardingVeiw.id: (context) => const OnboardingVeiw(),
+          SplashVeiw.id: (context) => const SplashVeiw(),
           LoginVeiw.id: (context) => const LoginVeiw(),
           RegistrationVeiw.id: (context) => const RegistrationVeiw(),
           BottomNavigationBarWigdet.id: (context) =>
@@ -45,7 +45,7 @@ class CoffeeApp extends StatelessWidget {
         },
         theme: ThemeData(fontFamily: "Lato"),
         debugShowCheckedModeBanner: false,
-        initialRoute: OnboardingVeiw.id,
+        initialRoute: SplashVeiw.id,
       ),
     );
   }

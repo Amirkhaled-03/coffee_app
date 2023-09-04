@@ -101,8 +101,10 @@ class _ItemCardState extends State<ItemCard> {
                         onPressed: () {
                           showModalBottomSheet(
                             clipBehavior: Clip.antiAliasWithSaveLayer,
-                            shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(24)),
+                            shape: const RoundedRectangleBorder(
+                                borderRadius: BorderRadius.only(
+                                    topLeft: Radius.circular(24),
+                                    topRight: Radius.circular(24))),
                             context: context,
                             builder: (context) {
                               return ItemDetailsBottomSheet(

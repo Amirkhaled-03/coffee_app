@@ -35,6 +35,11 @@ class _RegistrationVeiwState extends State<RegistrationVeiw> {
             if (state is LoadingRegistration) {
               isLoading = true;
             } else if (state is SuccessRegistration) {
+              BlocProvider.of<AuthCubit>(context).createUser(UserModel(
+                  userName: userName!,
+                  email: email!,
+                  password: password!,
+                  phoneNumber: phoneNumber!));
               isLoading = false;
               showSnackBar(context,
                   text: "Account created,login now",
@@ -43,8 +48,9 @@ class _RegistrationVeiwState extends State<RegistrationVeiw> {
 
               Navigator.pushNamed(context, LoginVeiw.id);
             } else if (state is FailureRegistration) {
+              isLoading = false;
               showSnackBar(context,
-                  text: state.errmessge, color: Colors.grey, time: 1);
+                  text: state.errmessge, color: Colors.grey, time: 2);
             }
           },
           builder: (context, state) {
@@ -99,13 +105,6 @@ class _RegistrationVeiwState extends State<RegistrationVeiw> {
                                   email: email!,
                                   password: password!,
                                 );
-
-                                BlocProvider.of<AuthCubit>(context).createUser(
-                                    UserModel(
-                                        userName: userName!,
-                                        email: email!,
-                                        password: password!,
-                                        phoneNumber: phoneNumber!));
                               } else {
                                 autovalidateMode = AutovalidateMode.always;
                                 setState(() {});

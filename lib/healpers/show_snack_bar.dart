@@ -7,12 +7,15 @@ void showSnackBar(
   required int time,
 }) {
   ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-    content: Align(
-      alignment: Alignment.bottomCenter,
-      child: Text(
-        text,
-        style: const TextStyle(
-            color: Colors.white, fontSize: 20, fontWeight: FontWeight.bold),
+    content: Padding(
+      padding: const EdgeInsets.only(left: 16, bottom: 2, top: 2),
+      child: Center(
+        child: Text(
+          textAlign: TextAlign.center,
+          text,
+          style: const TextStyle(
+              color: Colors.white, fontSize: 20, fontWeight: FontWeight.bold),
+        ),
       ),
     ),
     duration: Duration(seconds: time),

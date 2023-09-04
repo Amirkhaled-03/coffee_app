@@ -1,19 +1,19 @@
-import 'package:coffee_app/constants.dart';
-import 'package:coffee_app/veiws/widgets/get_started_onboarding.dart';
-import 'package:flutter/material.dart';
 
-class OnboardingVeiw extends StatelessWidget {
-  const OnboardingVeiw({super.key});
-  static String id = "OnboardingVeiw";
+import 'package:coffee_app/constants.dart';
+import 'package:flutter/material.dart';
+import 'get_started_onboarding.dart';
+
+class SplashViewBody extends StatelessWidget {
+  const SplashViewBody({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-        body: Stack(
+    return  Stack(
       children: [
         Image.asset(
           "Assets/photos/Onboarding.png",
           fit: BoxFit.cover,
+          width: double.infinity,
           height: double.infinity,
         ),
         const Column(
@@ -42,6 +42,6 @@ class OnboardingVeiw extends StatelessWidget {
           ],
         ),
       ],
-    ));
+    );
   }
 }

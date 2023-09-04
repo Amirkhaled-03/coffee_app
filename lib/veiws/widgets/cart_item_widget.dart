@@ -23,7 +23,7 @@ class CartItemWidget extends StatelessWidget {
     return Container(
       margin: const EdgeInsets.only(right: 6),
       width: 200,
-      decoration: BoxDecoration(borderRadius: BorderRadius.circular(5)),
+      decoration: BoxDecoration(borderRadius: BorderRadius.circular(10)),
       child: Card(
         clipBehavior: Clip.hardEdge,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
