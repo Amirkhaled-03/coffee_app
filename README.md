@@ -1,7 +1,5 @@
 # coffee_app
 
-A new Flutter project.
-
 This project is a starting point for a Flutter application.
 
 🚀 Excited to share my latest project! I've developed a coffee app using #Flutter and advanced Bloc state management, with Firebase as the robust backend.
