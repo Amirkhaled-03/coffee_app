@@ -2,14 +2,20 @@
 
 A new Flutter project.
 
-## Getting Started
-
 This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+🚀 Excited to share my latest project! I've developed a coffee app using #Flutter and advanced Bloc state management, with Firebase as the robust backend.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+📌 Key features:
+
+☕ Four Categories: Hot Coffee, Frappe, Cold Coffee, and Juices - Offering a delightful variety of beverages for coffee aficionados and juice lovers.
+
+💾 Cloud Firestore Integration - Seamlessly store and retrieve menu items and user preferences in real-time.
+
+🛒 Seamless Checkout - Effortlessly place orders and make payments for a hassle-free experience.
+
+
+[video link](https://drive.google.com/file/d/1086nbIH91fEpFOmt4lvmKSXyTnMaFfuJ/view?usp=sharing)
 
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
