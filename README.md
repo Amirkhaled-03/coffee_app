@@ -2,7 +2,7 @@
 
 This project is a starting point for a Flutter application.
 
-🚀 Excited to share my latest project! I've developed a coffee app using #Flutter and advanced Bloc state management, with Firebase as the robust backend.
+🚀 Excited to share my latest project! I've developed a coffee app using Flutter and Bloc state management, with Firebase as the robust backend.
 
 📌 Key features:
 
